@@ -3,22 +3,24 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<header class=" sticky top-0 h-[90px] shadow-xl z-30 bg-white">
-		<div class="container mx-auto flex justify-between h-full items-center">
-			<a href="#">
-				<img src="/logo.svg" alt="logo" />
-			</a>
-			<nav>
-				<ul class=" fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Testimonials</a></li>
-					<li><a href="#">Our Work</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+  <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
+    <div class="container mx-auto flex justify-between h-full items-center">
+      <a href="#">
+        <img src="/logo.svg" alt="logo" />
+      </a>
+      <nav>
+        <ul
+          class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+        >
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Our Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
     <div
       class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0 z-10"
@@ -43,7 +45,16 @@ import Layout from "../layouts/Layout.astro";
           <button
             class="h-[75px] px-[30px] transition-all duration-300 text-white rounded-[18px] flex items-center gap-2 bg-primary hover:bg-primary-hover mx-auto xl:mx-0"
             >Get free estimation
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="rgba(255,255,255,1)"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+              fill="rgba(255,255,255,1)"
+              ><path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path></svg
+            >
           </button>
         </div>
       </div>
@@ -54,7 +65,7 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
-	a {
-		@apply hover:text-accent
-	}
+  a {
+    @apply hover:text-accent;
+  }
 </style>
