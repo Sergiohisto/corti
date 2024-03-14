@@ -4,10 +4,19 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Welcome to Astro.">
 	<header class=" sticky top-0 h-[90px] shadow-xl z-30 bg-white">
-		<div class="container mx-auto">
+		<div class="container mx-auto flex justify-between h-full items-center">
 			<a href="#">
 				<img src="/logo.svg" alt="logo" />
 			</a>
+			<nav>
+				<ul class=" fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Testimonials</a></li>
+					<li><a href="#">Our Work</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
 		</div>
 	</header>
   <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
@@ -43,3 +52,9 @@ import Layout from "../layouts/Layout.astro";
     <div class="h-[3000px]"></div>
   </main>
 </Layout>
+
+<style>
+	a {
+		@apply hover:text-accent
+	}
+</style>
