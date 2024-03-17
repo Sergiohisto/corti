@@ -1,0 +1,40 @@
+<header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
+  <div class="container mx-auto flex justify-between h-full items-center">
+    <a href="#">
+      <img src="/logo.svg" alt="logo" />
+    </a>
+    <nav>
+      <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          fill="rgba(0,0,0,1)"
+          ><path d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"
+          ></path></svg
+        >
+      </div>
+      <ul
+        class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+        id="nav_menu"
+      >
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Our Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  import "../scripts/main";
+</script>
+
+<style>
+  .nav-is-open {
+    @apply h-[350px] p-6;
+  }
+</style>
