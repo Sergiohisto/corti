@@ -5,7 +5,7 @@ import Hero from "../components/Hero.astro";
 import Steps from "../components/Steps.astro";
 import GridIma from "../components/GridIma.astro";
 import About from "../components/About.astro";
-import Testimonial from "../components/Testimonial.astro";
+//import Testimonial from "../components/Testimonial.astro";
 ---
 
 <Layout title="Maria Jose Arteta .">
@@ -17,12 +17,17 @@ import Testimonial from "../components/Testimonial.astro";
     <Hero />
     <Steps />
     <About />
-    <Testimonial />
 
     <div class="h-[3000px]"></div>
 
     <script>
       import "../scripts/main";
+    </script>
+    <script>
+      import "../scripts/scrollreveal.min.js";
+    </script>
+    <script>
+      import "../scripts/swiper-bundle.min.js";
     </script>
   </main>
 
